@@ -3,6 +3,13 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
+import { Playfair_Display } from 'next/font/google';
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['400', '500', '600'],
+
+});
 
 const navLinks = [
   { label: 'STRATEGY', href: '/' },
@@ -52,9 +59,11 @@ export default function Navbar() {
           <img
             src="/logo.png"
             alt="Anticlockwise Logo"
-            className="h-6 w-auto invert"
+            className="h-10 w- "
           />
-          <span className="font-label-md text-xs tracking-[0.4em] text-white uppercase mt-1">
+          <span
+            className={`${playfair.className} text-l   tracking-[0.4em] text-white py-2 uppercase`}
+          >
             Anticlockwise
           </span>
         </Link>
