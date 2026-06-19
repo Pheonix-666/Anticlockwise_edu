@@ -3,18 +3,16 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
-import { Playfair_Display } from 'next/font/google';
+import { Bodoni_Moda } from 'next/font/google';
 
-const playfair = Playfair_Display({
+const bodoni = Bodoni_Moda({
   subsets: ['latin'],
   weight: ['400', '500', '600'],
-
 });
 
 const navLinks = [
   { label: 'STRATEGY', href: '/' },
   { label: 'COURSES', href: '/courses' },
-  { label: 'ADMISSION', href: '/admission' },
   { label: 'CAREERS', href: '/careers' },
   { label: 'ABOUT US', href: '/about' },
 ]
@@ -62,7 +60,7 @@ export default function Navbar() {
             className="h-10 w- "
           />
           <span
-            className={`${playfair.className} text-l   tracking-[0.4em] text-white py-2 uppercase`}
+            className={`${bodoni.className} text-l tracking-[0.3em] text-white uppercase font-medium`}
           >
             Anticlockwise
           </span>

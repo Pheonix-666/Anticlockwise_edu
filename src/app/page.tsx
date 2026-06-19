@@ -40,12 +40,12 @@ export default function Home() {
           <div className="relative z-10 px-margin-mobile pb-24">
             <div className="reveal active">
               <p className="font-label-md text-xs text-white/60 mb-8 tracking-[0.6em] uppercase">
-                Private Consultancy v.01
+                Private Consultancy for VIP
               </p>
               <h1 className="font-headline-xl text-white mb-12 -ml-1 text-overlap leading-none">
-                Think <span className="block italic -mt-2">Against</span>{' '}
-                <span className="block -mt-2">The Clock.</span>
-              </h1>
+                Think <br /><br />
+                <span className="block italic -mt-2">Against</span>{' '} <br />
+                <span className="block -mt-2">The Clock.</span> </h1>
               <div className="space-y-6 max-w-xs">
                 <p className="font-body-md text-white/70 leading-relaxed text-base">
                   We engineer academic dominance. Strategic planning meets cognitive excellence for the next generation of global leaders.
@@ -77,10 +77,12 @@ export default function Home() {
                 Intelligence Redefined
               </p>
               <h1
-                className="font-headline-xl text-white mb-8 leading-none tracking-tight"
-                style={{ fontSize: 'clamp(80px, 10vw, 160px)', fontWeight: 200, lineHeight: 0.9, position: 'relative', zIndex: 20 }}
+                className="font-headline-xl text-white mb-8 leading-[0.9] tracking-tight"
+                style={{ fontSize: 'clamp(80px, 10vw, 160px)', fontWeight: 50 }}
               >
-                Think <br /><span className="text-white italic"> Against</span> The Clock
+                Think
+                <span className="block italic">Against</span>
+                <span className="block whitespace-nowrap">The Clock</span>
               </h1>
               <p className="font-body-lg text-on-surface-variant max-w-lg mb-10 leading-relaxed text-lg">
                 We don't just tutor; we engineer academic dominance. Strategic planning meets cognitive excellence for the next generation of global leaders.
