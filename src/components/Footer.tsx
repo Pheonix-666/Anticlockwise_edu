@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="max-w-md">
             <div className="flex items-center gap-4 mb-10">
               <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcIHXJPulWtbqwziP5TQzXHE5HXJD-H3WE2BWrQ_uQHY9Z_1cO789HDGUfdC0AOJ90Dtnm92RCb3dX68rYDP_Xn9d1K_1mvkjhH-d90Ugqh228WJm80jBb6ygE_mKEg5vK9hMibDwr6e0ix2Y0b31rB9fPe_4kskG_L6JO8snvxhoIumimK7vZJl7jhPJGollAEUej2HJJhb4LT8SImr2-hcU7ycdIfY5yyLA5CHzPyVJngQTeOc727-QNkBAMQ6tGxhZFAmlxXcI"
+                src="logo.png"
                 alt="Anticlockwise Logo"
                 className="h-5 w-auto invert"
               />
