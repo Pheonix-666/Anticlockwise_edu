@@ -1,0 +1,151 @@
+export default function About() {
+  const mentors = [
+    {
+      name: 'Alexander Vance',
+      role: 'Strategy & Economics',
+      meta: 'IIT Madras B.Tech / MBA Wharton',
+      image: '/mentor-1.png',
+      desc: 'Expert in quantitative logic modeling and analytical pacing structures. Alexander specializes in designing long-term preparation timelines for elite performance.'
+    },
+    {
+      name: 'Dr. Elena Rossi',
+      role: 'Cognitive Science & Physics',
+      meta: 'Ph.D. Cognitive Psychology, Stanford',
+      image: '/mentor-2.png',
+      desc: 'Designs our core logical retrieval frameworks. Elena ensures that students optimize their biological retention and recall under extreme simulated test pressure.'
+    },
+    {
+      name: 'Julian Thorne',
+      role: 'Quantitative Analysis & Chemistry',
+      meta: 'Master’s in Chemistry, IISc Bangalore',
+      image: '/mentor-1.png', // Reused since image generation is unavailable
+      desc: 'Specializes in chemical synthesis, reaction logics, and quantitative problem solving. Julian focuses on eliminating conceptual friction in molecular chemistry.'
+    }
+  ]
+
+  return (
+    <div className="relative w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-padding">
+      {/* Background glow */}
+      <div className="absolute top-1/4 left-10 w-96 h-96 bg-white/5 blur-[120px] pointer-events-none"></div>
+
+      {/* Header */}
+      <div className="mb-24 border-b border-white/10 pb-12 reveal active">
+        <span className="font-label-md text-secondary tracking-[0.35em] uppercase block mb-4 text-sm">
+          THE ELITE SANCTUM
+        </span>
+        <h1 className="font-headline-xl text-white uppercase tracking-tight leading-none text-7xl md:text-8xl">
+          ABOUT US.
+        </h1>
+        <p className="font-body-lg text-on-surface-variant max-w-2xl mt-6 leading-relaxed">
+          We believe that academic dominance is not a matter of talent, but of strategic engineering.
+        </p>
+      </div>
+
+      {/* Philosophy Section */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-36 reveal active">
+        <div>
+          <h2 className="font-headline-md text-white mb-6 uppercase tracking-wider text-3xl">
+            Our Methodology
+          </h2>
+          <p className="font-body-md text-on-surface-variant leading-relaxed mb-6 text-base md:text-lg">
+            Standard educational systems focus on linear content delivery. They present formulas, list historical equations, and expect students to memorize solutions. At Anticlockwise, we reverse the paradigm.
+          </p>
+          <p className="font-body-md text-on-surface-variant leading-relaxed text-base">
+            We focus on cognitive mapping—teaching the underlying logic structure first. Our students learn to dismantle complex questions, isolate the target output, and reverse-engineer the quickest path to a solution. This approach builds structural clarity and speed that standard tutoring cannot match.
+          </p>
+        </div>
+        <div className="space-y-8 border-l border-white/10 pl-8">
+          <div className="hairline-gold pl-6 py-1">
+            <h3 className="font-headline-md text-white mb-2 uppercase tracking-wide text-xl">
+              1. Cognitive Engineering
+            </h3>
+            <p className="font-body-md text-on-surface-variant leading-relaxed text-base">
+              Reshaping how students absorb and process advanced math and science logic using systematic diagnostic tracking.
+            </p>
+          </div>
+          <div className="hairline-gold pl-6 py-1">
+            <h3 className="font-headline-md text-white mb-2 uppercase tracking-wide text-xl">
+              2. Result Anchoring
+            </h3>
+            <p className="font-body-md text-on-surface-variant leading-relaxed text-base">
+              Simulating exam pressure through precise testing metrics to build high-stakes resilience and eliminate friction.
+            </p>
+          </div>
+          <div className="hairline-gold pl-6 py-1">
+            <h3 className="font-headline-md text-white mb-2 uppercase tracking-wide text-xl">
+              3. Personalized Dossier
+            </h3>
+            <p className="font-body-md text-on-surface-variant leading-relaxed text-base">
+              A custom-built academic road map tracking progress, speed parameters, error types, and conceptual weak points.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* The Elite Vanguard Section */}
+      <div className="mb-36 reveal active">
+        <div className="mb-16">
+          <div className="flex items-center gap-4 mb-4">
+            <span className="h-[1px] w-8 bg-secondary"></span>
+            <h2 className="font-headline-md text-white uppercase tracking-wider text-2xl md:text-3xl">
+              The Elite Vanguard
+            </h2>
+          </div>
+          <p className="font-label-md text-on-surface-variant uppercase tracking-[0.25em] text-xs">
+            Our Senior Advisory &amp; Mentor Board
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {mentors.map((mentor, index) => (
+            <div key={index} className="relative group">
+              {/* Aspect 3/4 Image Container */}
+              <div className="aspect-[3/4] overflow-hidden bg-surface-container-high border border-white/10 relative">
+                <img
+                  alt={mentor.name}
+                  className="w-full h-full object-cover grayscale-noir hover:scale-105"
+                  src={mentor.image}
+                />
+                <span className="absolute top-0 right-0 w-2 h-2 bg-secondary"></span>
+              </div>
+              
+              {/* Mentor Meta Details */}
+              <div className="mt-6">
+                <h3 className="font-headline-md text-white tracking-wide uppercase text-2xl">
+                  {mentor.name}
+                </h3>
+                <span className="font-label-md text-secondary tracking-widest uppercase block mt-2 font-semibold text-xs">
+                  {mentor.role}
+                </span>
+                <span className="font-body-md text-on-surface-variant opacity-50 block mt-1 italic text-sm">
+                  {mentor.meta}
+                </span>
+                <p className="font-body-md text-on-surface-variant leading-relaxed mt-4 text-base">
+                  {mentor.desc}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Vision callout with spotlight blur and double hairline borders */}
+      <div className="relative bg-surface-container-high border border-white/10 p-10 md:p-16 text-center overflow-hidden reveal active">
+        <div className="absolute inset-0 dossier-overlay opacity-40 pointer-events-none"></div>
+        <div className="absolute -right-32 bottom-0 w-96 h-96 bg-white/5 blur-[120px] pointer-events-none"></div>
+
+        <div className="relative z-10 max-w-3xl mx-auto py-4">
+          <span className="font-label-md text-secondary tracking-[0.35em] uppercase block mb-6 font-semibold text-xs">
+            THE ANTICLOCKWISE CODEX
+          </span>
+          <h3 className="font-headline-md text-white mb-8 italic leading-relaxed text-2xl md:text-4xl">
+            &ldquo;Academic excellence is an engineering discipline.&rdquo;
+          </h3>
+          <p className="font-body-md text-on-surface-variant leading-relaxed max-w-2xl mx-auto text-sm md:text-base">
+            We do not promise simple improvements. We promise complete restructuring of logic capabilities. We exist to create the future leaders of sciences, engineering, and strategic sectors globally.
+          </p>
+        </div>
+      </div>
+    </div>
+  )
+}

@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Metrophobic&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-background: #0a0a0c;
+  --color-on-background: #ffffff;
+  --color-surface: #141414;
+  --color-on-surface: #ffffff;
+  --color-surface-variant: #282828;
+  --color-on-surface-variant: rgba(255, 255, 255, 0.7);
+  --color-surface-dim: #0a0a0c;
+  --color-surface-bright: #3c3c3c;
+  --color-surface-container-lowest: #0a0a0c;
+  --color-surface-container-low: #141414;
+  --color-surface-container: #282828;
+  --color-surface-container-high: #3c3c3c;
+  --color-surface-container-highest: #505050;
+
+  --color-primary: #ffffff;
+  --color-on-primary: #0a0a0c;
+  --color-primary-container: #3c3c3c;
+  --color-on-primary-container: #ffffff;
+  
+  --color-secondary: #e9c349;
+  --color-on-secondary: #0a0a0c;
+  --color-secondary-container: #505050;
+  --color-on-secondary-container: #ffffff;
+  
+  --color-secondary-fixed: #e9c349;
+  --color-secondary-fixed-dim: #d1b143;
+  --color-on-secondary-fixed: #0a0a0c;
+  --color-on-secondary-fixed-variant: #3c3c3c;
+
+  --color-error: #ff4c4c;
+  --color-on-error: #ffffff;
+  --color-error-container: #3c0000;
+  --color-on-error-container: #ff4c4c;
+  
+  --color-outline: #505050;
+  --color-outline-variant: #282828;
+
+  --color-neutral-champagne: #e6e3d3;
+
+  --font-body-lg: "Source Serif 4", Georgia, serif;
+  --font-headline-xl: "Bodoni Moda", Georgia, serif;
+  --font-body-md: "Source Serif 4", Georgia, serif;
+  --font-headline-md: "Bodoni Moda", Georgia, serif;
+  --font-headline-lg: "Bodoni Moda", Georgia, serif;
+  --font-headline-md-mobile: "Bodoni Moda", Georgia, serif;
+  --font-label-md: "Metrophobic", sans-serif;
+
+  --spacing-section-padding: 8rem;
+  --spacing-margin-desktop: 4rem;
+  --spacing-margin-mobile: 1.5rem;
+  
+  --container-max: 1200px;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-on-background);
+    font-weight: 300;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Scroll reveal animations */
+.reveal { 
+  opacity: 0; 
+  transform: translateY(40px); 
+  transition: all 1s cubic-bezier(0.16, 1, 0.3, 1); 
+}
+.reveal.active { 
+  opacity: 1; 
+  transform: translateY(0); 
+}
+.reveal-stagger-1 { transition-delay: 0.1s; }
+.reveal-stagger-2 { transition-delay: 0.2s; }
+.reveal-stagger-3 { transition-delay: 0.3s; }
+
+/* Image effects */
+.dossier-overlay { 
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.08) 0%, transparent 80%); 
+}
+
+.grayscale-noir { 
+  filter: grayscale(100%) contrast(1.2) brightness(0.8); 
+  transition: filter 0.8s ease; 
+}
+.grayscale-noir:hover { 
+  filter: grayscale(0%) contrast(1) brightness(1); 
+}
+
+/* Hairlines */
+.hairline-white-left { 
+  border-left: 1px solid rgba(255, 255, 255, 0.4); 
+}
+.hairline-gold {
+  border-left: 2px solid var(--color-secondary);
+}
+
+.writing-vertical { 
+  writing-mode: vertical-rl; 
+}
+
+.text-overlap {
+  mix-blend-mode: difference;
+}
+
+/* Mobile Menu Animation */
+#mobile-menu {
+  clip-path: circle(0% at 100% 0%);
+  transition: clip-path 0.8s cubic-bezier(0.7, 0, 0.3, 1);
+}
+#mobile-menu.active {
+  clip-path: circle(150% at 100% 0%);
+}
+
+.watermark-num {
+  font-size: 180px;
+  line-height: 1;
+  font-family: var(--font-headline-xl);
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.03);
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Spiral background pattern (from final3) */
+.spiral-bg {
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 50c0-10 10-15 20-10s15 15 10 25-20 15-30 10-15-20-10-35 25-20 40-10' fill='none' stroke='white' stroke-opacity='0.03' stroke-width='1'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-secondary);
+}
