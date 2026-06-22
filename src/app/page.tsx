@@ -40,15 +40,15 @@ export default function Home() {
           <div className="relative z-10 px-margin-mobile pb-24">
             <div className="reveal active">
               <p className="font-label-md text-xs text-white/60 mb-8 tracking-[0.6em] uppercase">
-                Private Consultancy for VIP
+                Premium Academic Mentorship
               </p>
               <h1 className="font-headline-xl text-white mb-12 -ml-1 text-overlap leading-none">
-                Think <br /><br />
-                <span className="block italic -mt-2">Against</span>{' '} <br />
-                <span className="block -mt-2">The Clock.</span> </h1>
+                Elite <br /><br />
+                <span className="block italic -mt-2">Academic</span>{' '} <br />
+                <span className="block -mt-2">Excellence.</span> </h1>
               <div className="space-y-6 max-w-xs">
                 <p className="font-body-md text-white/70 leading-relaxed text-base">
-                  We engineer academic dominance. Strategic planning meets cognitive excellence for the next generation of global leaders.
+                  We engineer academic dominance. Strategic planning meets personalized mentorship for international curriculum students.
                 </p>
                 <div className="pt-4 flex flex-col gap-4">
                   <Link
@@ -80,12 +80,12 @@ export default function Home() {
                 className="font-headline-xl text-white mb-8 leading-[0.9] tracking-tight"
                 style={{ fontSize: 'clamp(80px, 10vw, 160px)', fontWeight: 50 }}
               >
-                Think
-                <span className="block italic">Against</span>
-                <span className="block whitespace-nowrap">The Clock</span>
+                Elite
+                <span className="block italic">Academic</span>
+                <span className="block whitespace-nowrap">Excellence</span>
               </h1>
               <p className="font-body-lg text-on-surface-variant max-w-lg mb-10 leading-relaxed text-lg">
-                We don't just tutor; we engineer academic dominance. Strategic planning meets cognitive excellence for the next generation of global leaders.
+                We don't just tutor; we engineer academic dominance. Personalized mentorship, strategic guidance, and concept mastery for IB, IGCSE, and A Level students.
               </p>
               <div className="flex flex-row gap-4">
                 <Link
@@ -128,10 +128,10 @@ export default function Home() {
               <p className="font-label-md text-xs text-white/40 tracking-[0.5em] uppercase mb-4">
                 Core Framework
               </p>
-              <h2 className="font-headline-lg text-white uppercase">Advanced Modules.</h2>
+              <h2 className="font-headline-lg text-white uppercase">Mentorship Services.</h2>
             </div>
             <span className="font-label-md text-xs text-white/40 tracking-[0.2em] mt-6 md:mt-0">
-              V.2024.08
+              IBDP // IGCSE // A LEVEL
             </span>
           </div>
 
@@ -152,10 +152,10 @@ export default function Home() {
               <div className="w-full md:w-1/2 md:-ml-32 relative z-20 bg-background/90 backdrop-blur-md p-10 border border-white/10 shadow-2xl">
                 <span className="absolute -top-12 -left-8 watermark-num">01</span>
                 <h3 className="font-headline-md text-white mb-6 uppercase tracking-tight relative z-10">
-                  Cognitive Engineering
+                  Concept Mastery
                 </h3>
                 <p className="font-body-md text-on-surface-variant leading-relaxed relative z-10">
-                  Restructuring how students process complex information using neuro-linguistic frameworks and data-driven pattern recognition.
+                  Personalized one-on-one mentorship tailored to master complex subjects like Physics across IBDP, MYP, IGCSE, AS and A Levels.
                 </p>
               </div>
             </div>
@@ -176,10 +176,10 @@ export default function Home() {
               <div className="w-full md:w-1/2 md:-mr-32 relative z-20 bg-background/90 backdrop-blur-md p-10 border border-white/10 shadow-2xl">
                 <span className="absolute -top-12 -right-8 watermark-num">02</span>
                 <h3 className="font-headline-md text-white mb-6 uppercase tracking-tight relative z-10">
-                  Strategic Mapping
+                  IA & EE Guidance
                 </h3>
                 <p className="font-body-md text-on-surface-variant leading-relaxed relative z-10">
-                  A custom-built 24-month roadmap that aligns academic goals with extracurricular dominance and personal brand development.
+                  Expert guidance for IB Internal Assessments and Extended Essays, ensuring academic rigor, strategic structure, and top predicted grades.
                 </p>
               </div>
             </div>
@@ -200,10 +200,10 @@ export default function Home() {
               <div className="w-full md:w-1/2 md:-ml-32 relative z-20 bg-background/90 backdrop-blur-md p-10 border border-white/10 shadow-2xl">
                 <span className="absolute -top-12 -left-8 watermark-num">03</span>
                 <h3 className="font-headline-md text-white mb-6 uppercase tracking-tight relative z-10">
-                  Competitive Execution
+                  Exam Strategy & Revision
                 </h3>
                 <p className="font-body-md text-on-surface-variant leading-relaxed relative z-10">
-                  Performance under pressure. Our mentors simulate high-stakes environments to ensure zero friction during final examinations.
+                  Preparation under pressure. We simulate high-stakes environments for Unit Tests, Mocks, and Final Board Examinations to ensure zero friction.
                 </p>
               </div>
             </div>
@@ -216,9 +216,9 @@ export default function Home() {
         <div className="absolute -left-32 top-1/2 w-64 h-64 bg-white/5 blur-[120px] pointer-events-none" />
 
         <div className="mb-20 reveal">
-          <h2 className="font-headline-lg text-white mb-4 uppercase">The Elite Vanguard</h2>
+          <h2 className="font-headline-lg text-white mb-4 uppercase">Expert Mentors</h2>
           <p className="font-label-md text-xs text-white/40 tracking-[0.4em] uppercase">
-            Ivy League Alumni &amp; Industry Strategists
+            Subject Experts &amp; Strategic Guides
           </p>
         </div>
 
@@ -236,7 +236,7 @@ export default function Home() {
             <div className="mt-8 flex justify-between items-start">
               <div>
                 <h4 className="font-headline-md text-2xl text-white uppercase mb-1">Alexander Vance</h4>
-                <p className="font-label-md text-[11px] text-white/40 tracking-widest uppercase">Strategy &amp; Economics</p>
+                <p className="font-label-md text-[11px] text-white/40 tracking-widest uppercase">Physics Mentorship</p>
               </div>
               <span className="font-label-md text-[11px] text-white/20 mt-2">OXF / HARV</span>
             </div>
@@ -255,7 +255,7 @@ export default function Home() {
             <div className="mt-8 flex justify-between items-start">
               <div>
                 <h4 className="font-headline-md text-2xl text-white uppercase mb-1">Dr. Elena Rossi</h4>
-                <p className="font-label-md text-[11px] text-white/40 tracking-widest uppercase">Cognitive Science</p>
+                <p className="font-label-md text-[11px] text-white/40 tracking-widest uppercase">Exam Strategy</p>
               </div>
               <span className="font-label-md text-[11px] text-white/20 mt-2">STAN / MIT</span>
             </div>
@@ -274,7 +274,7 @@ export default function Home() {
             <div className="mt-8 flex justify-between items-start">
               <div>
                 <h4 className="font-headline-md text-2xl text-white uppercase mb-1">Julian Thorne</h4>
-                <p className="font-label-md text-[11px] text-white/40 tracking-widest uppercase">Quantitative Analysis</p>
+                <p className="font-label-md text-[11px] text-white/40 tracking-widest uppercase">IA & EE Guidance</p>
               </div>
               <span className="font-label-md text-[11px] text-white/20 mt-2">CAM / LSE</span>
             </div>
@@ -296,14 +296,14 @@ export default function Home() {
             {/* Stat 1 */}
             <div className="bg-black p-12 md:p-16 flex flex-col justify-center border-r border-white/5">
               <p className="font-label-md text-xs text-white/40 uppercase tracking-[0.5em] mb-8">
-                Outcomes // Improved
+                Outcomes // Methodology
               </p>
               <div className="flex items-center gap-8">
                 <div className="hairline-white-left h-24 opacity-50" />
-                <span className="font-headline-xl text-white text-7xl md:text-8xl">+240</span>
+                <span className="font-headline-xl text-white text-7xl md:text-8xl">100%</span>
               </div>
               <p className="font-body-md text-white/50 mt-10 text-base max-w-[280px]">
-                Mean SAT score elevation within a 12-week cycle. Outperforming traditional prep by 3.4x.
+                Focus on long-term academic success with personalized improvement plans and regular progress tracking.
               </p>
             </div>
 
@@ -312,14 +312,14 @@ export default function Home() {
               <div className="absolute inset-0 dossier-overlay opacity-50" />
               <div className="relative z-10">
                 <p className="font-label-md text-xs text-white/40 uppercase tracking-[0.5em] mb-8">
-                  Placement // Ivy League
+                  Support // Curriculum
                 </p>
                 <div className="flex items-center gap-8">
                   <div className="hairline-white-left h-24 opacity-50" />
-                  <span className="font-headline-xl text-white text-7xl md:text-8xl">98%</span>
+                  <span className="font-headline-xl text-white text-7xl md:text-8xl">5+</span>
                 </div>
                 <p className="font-body-md text-white/50 mt-10 text-base max-w-[280px]">
-                  Successful matriculation rate at top-tier global institutions.
+                  Expert tutoring for IBDP, MYP, IGCSE, AS Level, and A Level students worldwide.
                 </p>
               </div>
             </div>
@@ -329,28 +329,28 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/10 border-x border-b border-white/10">
             <div className="bg-surface-container-low p-10 group hover:bg-surface-variant transition-colors cursor-pointer border-r border-white/5">
               <p className="font-label-md text-xs text-on-surface-variant mb-6 uppercase tracking-widest">
-                Case Study: Stanford Strategy
+                Courses: IBDP Physics
               </p>
               <div className="flex justify-between items-center">
-                <span className="font-label-md text-xs text-white tracking-[0.2em]">READ ARCHIVE</span>
+                <span className="font-label-md text-xs text-white tracking-[0.2em]">EXPLORE</span>
                 <span className="material-symbols-outlined text-white group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
               </div>
             </div>
             <div className="bg-surface-container-low p-10 group hover:bg-surface-variant transition-colors cursor-pointer border-r border-white/5">
               <p className="font-label-md text-xs text-on-surface-variant mb-6 uppercase tracking-widest">
-                Case Study: MIT Engineering
+                Courses: IGCSE Physics
               </p>
               <div className="flex justify-between items-center">
-                <span className="font-label-md text-xs text-white tracking-[0.2em]">READ ARCHIVE</span>
+                <span className="font-label-md text-xs text-white tracking-[0.2em]">EXPLORE</span>
                 <span className="material-symbols-outlined text-white group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
               </div>
             </div>
             <div className="bg-surface-container-low p-10 group hover:bg-surface-variant transition-colors cursor-pointer">
               <p className="font-label-md text-xs text-on-surface-variant mb-6 uppercase tracking-widest">
-                Case Study: Oxford Humanities
+                Courses: AS & A Level Physics
               </p>
               <div className="flex justify-between items-center">
-                <span className="font-label-md text-xs text-white tracking-[0.2em]">READ ARCHIVE</span>
+                <span className="font-label-md text-xs text-white tracking-[0.2em]">EXPLORE</span>
                 <span className="material-symbols-outlined text-white group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
               </div>
             </div>
@@ -363,7 +363,7 @@ export default function Home() {
         <div className="max-w-md mx-auto">
           <h2 className="font-headline-lg text-white mb-8 uppercase tracking-tight">Ready to<br />pivot?</h2>
           <p className="font-body-md text-white/40 mb-16 leading-relaxed">
-            Entry is restricted to thirty students per cycle to ensure uncompromising performance.
+            We focus on small batch learning and personalized one-on-one mentoring to ensure you reach your full academic potential.
           </p>
           <Link
             href="/admission"

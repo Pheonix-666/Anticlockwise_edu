@@ -27,7 +27,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="font-body-md text-sm text-white/30 leading-loose max-w-[280px]">
-              Strategic academic consultancy specializing in high-potential cognitive performance and elite global placement.
+              Anticlockwise is a premium academic mentorship institute dedicated to helping international curriculum students achieve academic excellence.
             </p>
           </div>
 
@@ -62,12 +62,17 @@ export default function Footer() {
               <ul className="space-y-6">
                 <li>
                   <a href="#" className="font-label-md text-xs text-white/50 hover:text-white uppercase transition-colors">
-                    London
+                    South Mumbai Centre
                   </a>
                 </li>
                 <li>
                   <a href="#" className="font-label-md text-xs text-white/50 hover:text-white uppercase transition-colors">
-                    New York
+                    Online Classes (Worldwide)
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/anticlockwise_edu?igsh=MXRha2MwcnZmcHkwNg==" target="_blank" rel="noopener noreferrer" className="font-label-md text-xs text-white/50 hover:text-white uppercase transition-colors">
+                    Instagram
                   </a>
                 </li>
               </ul>

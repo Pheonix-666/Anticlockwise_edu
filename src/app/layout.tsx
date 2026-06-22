@@ -5,12 +5,12 @@ import FloatingEnquire from '@/components/FloatingEnquire'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Anticlockwise | Elite Academic Excellence',
-  description: 'Anticlockwise – premier coaching classes for JEE, NEET, and competitive exams. Expert faculty, proven results, and personalised learning for every student.',
-  keywords: 'coaching classes, JEE coaching, NEET coaching, competitive exams, Anticlockwise',
+  title: 'Anticlockwise | Elite Academic Mentorship',
+  description: 'Anticlockwise is a premium academic mentorship institute dedicated to helping international curriculum students (IBDP, MYP, IGCSE, AS/A Level) achieve academic excellence.',
+  keywords: 'academic mentorship, IBDP, IGCSE, AS Level, A Level, IB MYP, Physics tutoring, IA guidance, EE guidance, Anticlockwise',
   openGraph: {
-    title: 'Anticlockwise | Elite Academic Excellence',
-    description: 'Engineering academic dominance through strategic planning and expert mentorship.',
+    title: 'Anticlockwise | Elite Academic Mentorship',
+    description: 'Engineering academic dominance through personalized mentorship, strategic guidance, and concept mastery.',
     type: 'website',
   },
 }

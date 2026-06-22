@@ -3,55 +3,140 @@ import Link from 'next/link'
 export default function Courses() {
   const coursesList = [
     {
-      id: 'jee',
+      id: 'ibdp-physics',
       num: '01',
-      tag: 'ENGINEERING ADMISSIONS',
-      title: 'IIT-JEE Masterclass',
+      tag: 'COURSES',
+      title: 'IBDP Physics',
       duration: '2 Year Comprehensive Program',
-      frequency: '4 Sessions per Week + Simulated Testing',
-      overview: 'Our flagship engineering program designed to transform core math, physics, and chemistry concepts into execution tools for JEE Main & Advanced.',
+      frequency: 'Personalized Sessions',
+      overview: 'Expert mentoring for the IB Diploma Programme Physics curriculum, covering core, AHL, and options.',
       image: '/module-equations.png',
       highlights: [
-        'Advanced Calculus & Coordinate Geometry integration',
-        'Mechanics, Electromagnetism, and Quantum physics core mastery',
-        'Organic mechanisms, Inorganic synthesis, & Physical thermodynamics',
-        'Simulated mock tests mimicking the actual exam environment'
+        'In-depth conceptual mastery of all topics',
+        'Focus on analytical problem solving',
+        'Past paper practice and exam technique',
+        'Targeted support for difficult concepts'
       ],
-      methodology: 'Focuses on inverse logical parsing—analyzing the end goal of a complex equation first and tracing paths backward to construct a speed-optimized solution.'
+      methodology: 'Strategic planning meets personalized mentorship to ensure top predicted grades and final board success.'
     },
     {
-      id: 'neet',
+      id: 'ib-myp',
       num: '02',
-      tag: 'MEDICAL ADMISSIONS',
-      title: 'NEET Accelerator',
-      duration: '2 Year Dedicated Program',
-      frequency: '4 Sessions per Week + Diagnostic Audits',
-      overview: 'An intensive medical stream curriculum optimizing theoretical biology retention, analytical physics calculations, and organic pathways.',
+      tag: 'COURSES',
+      title: 'IB MYP Science & Physics',
+      duration: 'Flexible / Continuous',
+      frequency: 'Personalized Sessions',
+      overview: 'Building strong foundations in MYP Science and Physics to prepare for the rigorous IBDP.',
       image: '/module-books.png',
       highlights: [
-        'Complete NCERT mapping + advanced conceptual extensions',
-        'Physical chemistry calculations & organic mechanism practice',
-        'Mock tests tracking accuracy metrics, time management, and error mapping',
-        'Doubt-clearing workshops with medical school alumni mentors'
+        'Scientific inquiry and conceptual understanding',
+        'Application of scientific knowledge',
+        'Building core skills for transition to IBDP',
+        'Regular assessments and feedback'
       ],
-      methodology: 'Implements biological spatial retention maps and high-speed analytical physics patterns to reduce conceptual retrieval time to under 40 seconds per question.'
+      methodology: 'Fostering intellectual curiosity and foundational logic to build confidence early on.'
     },
     {
-      id: 'foundation',
+      id: 'igcse-physics',
       num: '03',
-      tag: 'SCHOLASTIC DOMINANCE',
-      title: 'Olympiad & Foundation Core',
-      duration: '1 Year Acceleration Program',
-      frequency: '3 Sessions per Week',
-      overview: 'Building the fundamental logical structures in Mathematics and Sciences for Class 8, 9, and 10 students aiming for national-level Olympiads (RMO, INJSO, NTSE) and strong Board scores.',
+      tag: 'COURSES',
+      title: 'IGCSE Physics',
+      duration: '1-2 Year Program',
+      frequency: 'Personalized Sessions',
+      overview: 'Comprehensive preparation for the IGCSE Physics board examinations.',
       image: '/module-staircase.png',
       highlights: [
-        'Number theory, combinatorics, and geometry foundations',
-        'Conceptual mechanics and atomic physics introductions',
-        'Structured logical deduction and verbal analysis modules',
-        'Preparation for major competitive foundation screens'
+        'Complete syllabus coverage',
+        'Practical skills and alternative to practical preparation',
+        'Mock exams and past paper analysis',
+        'Targeted weak area identification'
       ],
-      methodology: 'Replaces rote memorization with experimental thinking. Students learn to derive laws and formulas from first principles, establishing intellectual resilience early.'
+      methodology: 'Systematic approach to theoretical understanding and application of physics principles.'
+    },
+    {
+      id: 'as-level',
+      num: '04',
+      tag: 'COURSES',
+      title: 'AS Level Physics',
+      duration: '1 Year Program',
+      frequency: 'Personalized Sessions',
+      overview: 'Specialized mentoring for the AS Level Physics curriculum.',
+      image: '/module-equations.png',
+      highlights: [
+        'Core concepts and mathematical applications',
+        'Data analysis and experimental skills',
+        'Strategic revision for AS exams',
+        'Step-by-step problem solving strategies'
+      ],
+      methodology: 'Focused cognitive engineering to handle the leap in complexity from IGCSE.'
+    },
+    {
+      id: 'a-level',
+      num: '05',
+      tag: 'COURSES',
+      title: 'A Level Physics',
+      duration: '1 Year Program (A2)',
+      frequency: 'Personalized Sessions',
+      overview: 'Advanced preparation for final A Level Physics board exams, ensuring university readiness.',
+      image: '/module-books.png',
+      highlights: [
+        'Advanced physics principles and applications',
+        'Synthesis of complex topics',
+        'Rigorous mock exam simulations',
+        'A* focused exam strategies'
+      ],
+      methodology: 'Performance under pressure through high-stakes simulated testing.'
+    },
+    {
+      id: 'ia-guidance',
+      num: '06',
+      tag: 'ACADEMIC MENTORSHIP',
+      title: 'IA (Internal Assessment) Guidance',
+      duration: 'Project-based',
+      frequency: 'One-on-One Mentoring',
+      overview: 'Expert support for IB Physics Internal Assessments to ensure maximum marks.',
+      image: '/module-staircase.png',
+      highlights: [
+        'Topic selection and research question formulation',
+        'Experiment design and data collection strategies',
+        'Data analysis and error evaluation',
+        'Review and refinement for top bands'
+      ],
+      methodology: 'Strategic mapping of the IA criteria to ensure every point is targeted and achieved.'
+    },
+    {
+      id: 'ee-guidance',
+      num: '07',
+      tag: 'ACADEMIC MENTORSHIP',
+      title: 'EE (Extended Essay) Guidance',
+      duration: 'Project-based',
+      frequency: 'One-on-One Mentoring',
+      overview: 'Comprehensive mentorship for the IB Extended Essay in Physics.',
+      image: '/module-equations.png',
+      highlights: [
+        'Original research topic development',
+        'Literature review and methodology planning',
+        'Writing and structuring the 4000-word essay',
+        'Preparation for the viva voce'
+      ],
+      methodology: 'Academic rigor and independent research skills building for top EE grades.'
+    },
+    {
+      id: 'exam-strategy',
+      num: '08',
+      tag: 'ACADEMIC MENTORSHIP',
+      title: 'Exam Strategy & Revision Programs',
+      duration: 'Intensive Revision',
+      frequency: 'Before Unit Tests/Mocks/Boards',
+      overview: 'Preparation for all school assessments, mid-terms, mocks, and final board examinations.',
+      image: '/module-books.png',
+      highlights: [
+        'Personalized improvement plans',
+        'Predicted grade assessment',
+        'Performance analysis and academic audits',
+        'Time management and stress reduction techniques'
+      ],
+      methodology: 'Simulated environments to build high-stakes resilience and eliminate friction during exams.'
     }
   ]
 

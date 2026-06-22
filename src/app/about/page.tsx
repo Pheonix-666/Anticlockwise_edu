@@ -2,24 +2,24 @@ export default function About() {
   const mentors = [
     {
       name: 'Alexander Vance',
-      role: 'Strategy & Economics',
-      meta: 'IIT Madras B.Tech / MBA Wharton',
+      role: 'Physics Mentorship',
+      meta: 'M.Sc. Physics, Imperial College London',
       image: '/mentor-1.png',
-      desc: 'Expert in quantitative logic modeling and analytical pacing structures. Alexander specializes in designing long-term preparation timelines for elite performance.'
+      desc: 'Expert in conceptual logic modeling and analytical pacing structures. Alexander specializes in designing long-term preparation timelines for elite performance in IB and A Level Physics.'
     },
     {
       name: 'Dr. Elena Rossi',
-      role: 'Cognitive Science & Physics',
-      meta: 'Ph.D. Cognitive Psychology, Stanford',
+      role: 'Exam Strategy',
+      meta: 'Ph.D. Education, Oxford',
       image: '/mentor-2.png',
       desc: 'Designs our core logical retrieval frameworks. Elena ensures that students optimize their biological retention and recall under extreme simulated test pressure.'
     },
     {
       name: 'Julian Thorne',
-      role: 'Quantitative Analysis & Chemistry',
-      meta: 'Master’s in Chemistry, IISc Bangalore',
+      role: 'IA & EE Guidance',
+      meta: 'M.Ed., Cambridge',
       image: '/mentor-1.png', // Reused since image generation is unavailable
-      desc: 'Specializes in chemical synthesis, reaction logics, and quantitative problem solving. Julian focuses on eliminating conceptual friction in molecular chemistry.'
+      desc: 'Specializes in scientific research, writing structure, and quantitative data analysis. Julian focuses on guiding students to secure top bands in IB Internal Assessments and Extended Essays.'
     }
   ]
 
@@ -36,9 +36,14 @@ export default function About() {
         <h1 className="font-headline-xl text-white uppercase tracking-tight leading-none text-7xl md:text-8xl">
           ABOUT US.
         </h1>
-        <p className="font-body-lg text-on-surface-variant max-w-2xl mt-6 leading-relaxed">
-          We believe that academic dominance is not a matter of talent, but of strategic engineering.
-        </p>
+        <div className="font-body-lg text-on-surface-variant max-w-3xl mt-6 leading-relaxed space-y-4">
+          <p>
+            Anticlockwise is a premium academic mentorship institute dedicated to helping international curriculum students achieve academic excellence. Unlike traditional coaching classes that focus only on teaching, Anticlockwise focuses on personalized mentorship, strategic guidance, concept mastery, and long-term academic success.
+          </p>
+          <p>
+            We support students through expert subject mentoring, exam preparation, IA/EE guidance, study planning, and performance tracking, helping them reach their full academic potential.
+          </p>
+        </div>
       </div>
 
       {/* Philosophy Section */}
@@ -60,7 +65,7 @@ export default function About() {
               1. Cognitive Engineering
             </h3>
             <p className="font-body-md text-on-surface-variant leading-relaxed text-base">
-              Reshaping how students absorb and process advanced math and science logic using systematic diagnostic tracking.
+              Reshaping how students absorb and process advanced physics and sciences logic using systematic diagnostic tracking.
             </p>
           </div>
           <div className="hairline-gold pl-6 py-1">

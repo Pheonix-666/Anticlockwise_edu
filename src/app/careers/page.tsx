@@ -6,7 +6,7 @@ export default function Careers() {
     name: '',
     email: '',
     phone: '',
-    role: 'JEE Mathematics Mentor',
+    role: 'IB/A Level Physics Senior Mentor',
     experience: '',
     bio: ''
   })
@@ -34,22 +34,22 @@ export default function Careers() {
 
   const roles = [
     {
-      title: 'JEE Mathematics Senior Mentor',
-      location: 'Onsite / Bangalore',
+      title: 'IB/A Level Physics Senior Mentor',
+      location: 'Hybrid / South Mumbai',
       type: 'Full-time',
-      requirements: 'B.Tech/M.Tech from IITs or equivalent premier institute. Minimum 5 years teaching advanced calculus, algebra, and coordinate geometry for JEE Advanced levels.'
+      requirements: 'M.Sc. Physics or equivalent from a premier institute. Minimum 5 years teaching advanced physics for IBDP and A Level.'
     },
     {
-      title: 'NEET Organic Chemistry Specialist',
-      location: 'Onsite / Bangalore',
+      title: 'IGCSE Physics Mentor',
+      location: 'Hybrid / South Mumbai',
       type: 'Full-time',
-      requirements: 'Ph.D or Master’s in Chemistry. Exceptional clarity in molecular mechanisms, reaction logic, and conceptual diagnostic tracking.'
+      requirements: 'B.Sc./M.Sc. in Physics. Exceptional clarity in foundational concepts and experience preparing students for IGCSE board examinations.'
     },
     {
-      title: 'Cognitive Curriculum Architect',
-      location: 'Hybrid',
-      type: 'Full-time',
-      requirements: 'Experience in educational psychology or cognitive engineering. Skill in developing speed-optimized logic pathways, testing systems, and performance analytics.'
+      title: 'IA & EE Guidance Specialist',
+      location: 'Remote',
+      type: 'Part-time',
+      requirements: 'Experience in educational research and scientific writing. Skill in guiding students through the rigorous process of IB Internal Assessments and Extended Essays in Physics.'
     }
   ]
 
@@ -67,7 +67,7 @@ export default function Careers() {
           CAREERS.
         </h1>
         <p className="font-body-lg text-on-surface-variant max-w-2xl mt-6 leading-relaxed">
-          We look for educators who see teaching as an engineering discipline. Join a cohort of Ivy League and IIT alumni redefining scholastic dominance.
+          We look for educators who see teaching as an engineering discipline. Join a cohort of experts redefining scholastic dominance in international curricula.
         </p>
       </div>
 
@@ -269,9 +269,9 @@ export default function Careers() {
                     onChange={(e) => setFormData({ ...formData, role: e.target.value })}
                     className="w-full bg-surface-variant border border-outline-variant text-white p-3 font-body-md text-sm rounded-none focus:outline-none focus:border-secondary focus:ring-0 transition-colors appearance-none cursor-pointer"
                   >
-                    <option value="JEE Mathematics Senior Mentor">JEE Mathematics Senior Mentor</option>
-                    <option value="NEET Organic Chemistry Specialist">NEET Organic Chemistry Specialist</option>
-                    <option value="Cognitive Curriculum Architect">Cognitive Curriculum Architect</option>
+                    <option value="IB/A Level Physics Senior Mentor">IB/A Level Physics Senior Mentor</option>
+                    <option value="IGCSE Physics Mentor">IGCSE Physics Mentor</option>
+                    <option value="IA & EE Guidance Specialist">IA & EE Guidance Specialist</option>
                   </select>
                 </div>
                 <div>
