@@ -1,5 +1,12 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { Bodoni_Moda } from 'next/font/google';
+
+const bodoni = Bodoni_Moda({
+  subsets: ['latin'],
+  weight: ['400', '500', '600'],
+});
+
 
 export default function Footer() {
   return (
@@ -11,9 +18,11 @@ export default function Footer() {
               <img
                 src="logo.png"
                 alt="Anticlockwise Logo"
-                className="h-5 w-auto invert"
+                className="h-20 w-auto invert"
               />
-              <span className="font-label-md text-xs text-white tracking-[0.3em] uppercase mt-1">
+              <span
+                className={`${bodoni.className} text-[40px] tracking-[0.3em] text-white uppercase font-medium`}
+              >
                 Anticlockwise
               </span>
             </div>
