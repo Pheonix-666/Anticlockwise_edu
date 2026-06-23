@@ -1,28 +1,4 @@
 export default function About() {
-  const mentors = [
-    {
-      name: 'Alexander Vance',
-      role: 'Physics Mentorship',
-      meta: 'M.Sc. Physics, Imperial College London',
-      image: '/mentor-1.png',
-      desc: 'Expert in conceptual logic modeling and analytical pacing structures. Alexander specializes in designing long-term preparation timelines for elite performance in IB and A Level Physics.'
-    },
-    {
-      name: 'Dr. Elena Rossi',
-      role: 'Exam Strategy',
-      meta: 'Ph.D. Education, Oxford',
-      image: '/mentor-2.png',
-      desc: 'Designs our core logical retrieval frameworks. Elena ensures that students optimize their biological retention and recall under extreme simulated test pressure.'
-    },
-    {
-      name: 'Julian Thorne',
-      role: 'IA & EE Guidance',
-      meta: 'M.Ed., Cambridge',
-      image: '/mentor-1.png', // Reused since image generation is unavailable
-      desc: 'Specializes in scientific research, writing structure, and quantitative data analysis. Julian focuses on guiding students to secure top bands in IB Internal Assessments and Extended Essays.'
-    }
-  ]
-
   return (
     <div className="relative w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-padding">
       {/* Background glow */}
@@ -84,53 +60,6 @@ export default function About() {
               A custom-built academic road map tracking progress, speed parameters, error types, and conceptual weak points.
             </p>
           </div>
-        </div>
-      </div>
-
-      {/* The Elite Vanguard Section */}
-      <div className="mb-36 reveal active">
-        <div className="mb-16">
-          <div className="flex items-center gap-4 mb-4">
-            <span className="h-[1px] w-8 bg-secondary"></span>
-            <h2 className="font-headline-md text-white uppercase tracking-wider text-2xl md:text-3xl">
-              The Elite Vanguard
-            </h2>
-          </div>
-          <p className="font-label-md text-on-surface-variant uppercase tracking-[0.25em] text-xs">
-            Our Senior Advisory &amp; Mentor Board
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {mentors.map((mentor, index) => (
-            <div key={index} className="relative group">
-              {/* Aspect 3/4 Image Container */}
-              <div className="aspect-[3/4] overflow-hidden bg-surface-container-high border border-white/10 relative">
-                <img
-                  alt={mentor.name}
-                  className="w-full h-full object-cover grayscale-noir hover:scale-105"
-                  src={mentor.image}
-                />
-                <span className="absolute top-0 right-0 w-2 h-2 bg-secondary"></span>
-              </div>
-              
-              {/* Mentor Meta Details */}
-              <div className="mt-6">
-                <h3 className="font-headline-md text-white tracking-wide uppercase text-2xl">
-                  {mentor.name}
-                </h3>
-                <span className="font-label-md text-secondary tracking-widest uppercase block mt-2 font-semibold text-xs">
-                  {mentor.role}
-                </span>
-                <span className="font-body-md text-on-surface-variant opacity-50 block mt-1 italic text-sm">
-                  {mentor.meta}
-                </span>
-                <p className="font-body-md text-on-surface-variant leading-relaxed mt-4 text-base">
-                  {mentor.desc}
-                </p>
-              </div>
-            </div>
-          ))}
         </div>
       </div>
 

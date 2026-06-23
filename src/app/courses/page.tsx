@@ -259,7 +259,9 @@ export default function Courses() {
                       Cohort size: 30 students
                     </span>
                     <Link
-                      href="/admission#enquire"
+                      href="https://wa.me/9137773967"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-secondary hover:text-white text-sm font-label-md font-semibold tracking-wider transition-colors duration-300 uppercase flex items-center gap-1"
                     >
                       APPLY NOW <span className="material-symbols-outlined text-xs">arrow_right_alt</span>
@@ -285,7 +287,9 @@ export default function Courses() {
         </div>
         <div className="relative z-10 whitespace-nowrap">
           <Link
-            href="/admission#enquire"
+            href="https://wa.me/9137773967"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block bg-white text-black px-8 py-4 font-label-md tracking-widest uppercase hover:bg-secondary hover:text-white transition-all duration-300 shadow-[0_5px_15px_rgba(255,255,255,0.05)]"
           >
             BOOK PROFILE AUDIT

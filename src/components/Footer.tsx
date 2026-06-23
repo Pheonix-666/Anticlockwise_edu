@@ -41,7 +41,7 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/admission" className="font-label-md text-xs text-white/50 hover:text-white uppercase transition-colors">
+                  <Link href="https://wa.me/9137773967" target="_blank" rel="noopener noreferrer" className="font-label-md text-xs text-white/50 hover:text-white uppercase transition-colors">
                     Admission
                   </Link>
                 </li>
@@ -61,12 +61,12 @@ export default function Footer() {
               <h5 className="font-label-md text-xs text-white/20 uppercase tracking-[0.4em]">Connect</h5>
               <ul className="space-y-6">
                 <li>
-                  <a href="#" className="font-label-md text-xs text-white/50 hover:text-white uppercase transition-colors">
+                  <a href="https://wa.me/9137773967" target="_blank" rel="noopener noreferrer" className="font-label-md text-xs text-white/50 hover:text-white uppercase transition-colors">
                     South Mumbai Centre
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="font-label-md text-xs text-white/50 hover:text-white uppercase transition-colors">
+                  <a href="https://wa.me/9137773967" target="_blank" rel="noopener noreferrer" className="font-label-md text-xs text-white/50 hover:text-white uppercase transition-colors">
                     Online Classes (Worldwide)
                   </a>
                 </li>

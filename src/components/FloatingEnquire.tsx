@@ -16,7 +16,9 @@ export default function FloatingEnquire() {
         </div>
       )}
       <Link
-        href="/admission#enquire"
+        href="https://wa.me/9137773967"
+        target="_blank"
+        rel="noopener noreferrer"
         id="floating-enquire-btn"
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}

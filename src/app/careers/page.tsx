@@ -14,6 +14,7 @@ export default function Careers() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
+    window.open("https://wa.me/9137773967", "_blank")
     setIsSubmitted(true)
   }
 

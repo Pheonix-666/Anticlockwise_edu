@@ -90,7 +90,9 @@ export default function Navbar() {
             )
           })}
           <Link
-            href="/admission#enquire"
+            href="https://wa.me/9137773967"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-white text-black px-8 py-3 font-label-md text-xs uppercase tracking-widest hover:bg-neutral-champagne transition-all duration-300 ml-4"
           >
             ENQUIRE
@@ -124,7 +126,9 @@ export default function Navbar() {
             })}
           </nav>
           <Link
-            href="/admission#enquire"
+            href="https://wa.me/9137773967"
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={() => setMenuOpen(false)}
             className="inline-block mt-12 bg-white text-black px-12 py-5 font-label-md text-label-md uppercase tracking-[0.3em] w-full text-center"
           >

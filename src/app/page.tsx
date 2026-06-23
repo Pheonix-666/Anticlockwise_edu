@@ -211,83 +211,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ─── ELITE VANGUARD (final3 3-col grid + finalm3 dark) ──────────────────────────── */}
-      <section className="px-margin-mobile md:px-margin-desktop py-section-padding max-w-container-max mx-auto relative overflow-hidden">
-        <div className="absolute -left-32 top-1/2 w-64 h-64 bg-white/5 blur-[120px] pointer-events-none" />
-
-        <div className="mb-20 reveal">
-          <h2 className="font-headline-lg text-white mb-4 uppercase">Expert Mentors</h2>
-          <p className="font-label-md text-xs text-white/40 tracking-[0.4em] uppercase">
-            Subject Experts &amp; Strategic Guides
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Mentor 1 */}
-          <div className="relative reveal reveal-stagger-1 group">
-            <div className="aspect-[3/4] overflow-hidden bg-surface-container-high border border-white/5">
-              <Image
-                src="/mentor-1.png"
-                alt="Alexander Vance"
-                fill
-                className="object-cover grayscale-noir"
-              />
-            </div>
-            <div className="mt-8 flex justify-between items-start">
-              <div>
-                <h4 className="font-headline-md text-2xl text-white uppercase mb-1">Alexander Vance</h4>
-                <p className="font-label-md text-[11px] text-white/40 tracking-widest uppercase">Physics Mentorship</p>
-              </div>
-              <span className="font-label-md text-[11px] text-white/20 mt-2">OXF / HARV</span>
-            </div>
-          </div>
-
-          {/* Mentor 2 */}
-          <div className="relative reveal reveal-stagger-2 group md:mt-12">
-            <div className="aspect-[3/4] overflow-hidden bg-surface-container-high border border-white/5">
-              <Image
-                src="/mentor-2.png"
-                alt="Dr. Elena Rossi"
-                fill
-                className="object-cover grayscale-noir"
-              />
-            </div>
-            <div className="mt-8 flex justify-between items-start">
-              <div>
-                <h4 className="font-headline-md text-2xl text-white uppercase mb-1">Dr. Elena Rossi</h4>
-                <p className="font-label-md text-[11px] text-white/40 tracking-widest uppercase">Exam Strategy</p>
-              </div>
-              <span className="font-label-md text-[11px] text-white/20 mt-2">STAN / MIT</span>
-            </div>
-          </div>
-
-          {/* Mentor 3 */}
-          <div className="relative reveal reveal-stagger-3 group">
-            <div className="aspect-[3/4] overflow-hidden bg-surface-container-high border border-white/5">
-              <Image
-                src="/mentor-1.png"
-                alt="Julian Thorne"
-                fill
-                className="object-cover grayscale-noir"
-              />
-            </div>
-            <div className="mt-8 flex justify-between items-start">
-              <div>
-                <h4 className="font-headline-md text-2xl text-white uppercase mb-1">Julian Thorne</h4>
-                <p className="font-label-md text-[11px] text-white/40 tracking-widest uppercase">IA & EE Guidance</p>
-              </div>
-              <span className="font-label-md text-[11px] text-white/20 mt-2">CAM / LSE</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-40 text-center reveal flex flex-col items-center">
-          <div className="h-px w-12 bg-white/20 mb-12" />
-          <blockquote className="font-body-md italic text-white/60 text-xl leading-relaxed max-w-2xl">
-            "Academic success is not an effort of will, but an architecture of logic."
-          </blockquote>
-        </div>
-      </section>
 
       {/* ─── OUTCOMES (Brutalist Data Grid from final3) ──────────── */}
       <section className="bg-black py-section-padding border-y border-white/5">
@@ -366,7 +289,9 @@ export default function Home() {
             We focus on small batch learning and personalized one-on-one mentoring to ensure you reach your full academic potential.
           </p>
           <Link
-            href="/admission"
+            href="https://wa.me/9137773967"
+            target="_blank"
+            rel="noopener noreferrer"
             className="block bg-white text-black w-full py-6 font-label-md text-xs uppercase tracking-[0.5em] hover:bg-neutral-200 transition-colors"
           >
             Apply for Consultation
