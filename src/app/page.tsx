@@ -27,39 +27,39 @@ export default function Home() {
           {/* Background Layer */}
           <div className="absolute inset-0 z-0">
             <Image
-              src="/hero-abstract.png"
+              src="/hero-mentorship.png"
               alt="Hero Background"
               fill
-              className="object-cover contrast-125 brightness-[0.4]"
+              className="object-cover contrast-110 brightness-[0.6] grayscale-noir"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"></div>
           </div>
 
           {/* Text Overlap Layer */}
           <div className="relative z-10 px-margin-mobile pb-24">
             <div className="reveal active">
-              <p className="font-label-md text-xs text-white/60 mb-8 tracking-[0.6em] uppercase">
+              <p className="font-label-md text-xs text-primary/80 mb-8 tracking-[0.6em] uppercase">
                 Premium Academic Mentorship
               </p>
-              <h1 className="font-headline-xl text-white mb-12 -ml-1 text-overlap leading-none">
+              <h1 className="font-headline-xl text-primary mb-12 -ml-1 text-overlap leading-none">
                 Elite <br /><br />
                 <span className="block italic -mt-2">Academic</span>{' '} <br />
                 <span className="block -mt-2">Excellence.</span> </h1>
               <div className="space-y-6 max-w-xs">
-                <p className="font-body-md text-white/70 leading-relaxed text-base">
+                <p className="font-body-md text-primary/80 leading-relaxed text-base">
                   We engineer academic dominance. Strategic planning meets personalized mentorship for international curriculum students.
                 </p>
                 <div className="pt-4 flex flex-col gap-4">
                   <Link
                     href="/courses"
-                    className="bg-white text-black py-5 px-8 font-label-md text-xs uppercase tracking-[0.4em] text-center"
+                    className="bg-primary text-white py-5 px-8 font-label-md text-xs uppercase tracking-[0.4em] text-center shadow-lg"
                   >
                     Methodology
                   </Link>
                   <Link
                     href="/about"
-                    className="border border-white/20 text-white py-5 px-8 font-label-md text-xs uppercase tracking-[0.4em] backdrop-blur-sm text-center"
+                    className="border border-primary/20 text-primary hover:bg-primary/5 py-5 px-8 font-label-md text-xs uppercase tracking-[0.4em] backdrop-blur-sm text-center transition-colors"
                   >
                     Case Studies
                   </Link>
@@ -77,7 +77,7 @@ export default function Home() {
                 Intelligence Redefined
               </p>
               <h1
-                className="font-headline-xl text-white mb-8 leading-[0.9] tracking-tight"
+                className="font-headline-xl text-primary mb-8 leading-[0.9] tracking-tight"
                 style={{ fontSize: 'clamp(80px, 10vw, 160px)', fontWeight: 50 }}
               >
                 Elite
@@ -90,13 +90,13 @@ export default function Home() {
               <div className="flex flex-row gap-4">
                 <Link
                   href="/courses"
-                  className="bg-white text-black px-10 py-5 font-label-md text-xs uppercase tracking-widest hover:scale-105 transition-transform text-center"
+                  className="bg-primary text-white px-10 py-5 font-label-md text-xs uppercase tracking-widest hover:scale-105 transition-transform text-center shadow-lg hover:shadow-xl"
                 >
                   EXPLORE METHODOLOGY
                 </Link>
                 <Link
                   href="/about"
-                  className="border border-white/20 text-white px-10 py-5 font-label-md text-xs uppercase tracking-widest hover:bg-white/10 transition-colors text-center"
+                  className="border border-primary/20 text-primary px-10 py-5 font-label-md text-xs uppercase tracking-widest hover:bg-primary/5 transition-colors text-center"
                 >
                   CASE STUDIES
                 </Link>
@@ -104,16 +104,30 @@ export default function Home() {
             </div>
             <div className="relative h-[600px] xl:h-[750px] w-full flex justify-center items-center">
               {/* Abstract 3D Asset Mockup */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-white/5 via-transparent to-transparent blur-3xl opacity-30"></div>
-              <Image
-                src="/hero-abstract.png"
-                alt="Hero Asset"
-                fill
-                className="object-contain z-0 scale-[1.3] "
-                priority
-              />
-              <div className="absolute -right-20 top-1/4 writing-vertical opacity-5 select-none pointer-events-none lg:block">
-                <span className="font-headline-xl text-[200px] text-white tracking-tighter">PRECISION</span>
+              <div className="absolute inset-0 bg-secondary/5 blur-3xl opacity-50"></div>
+              
+              <div className="relative w-full aspect-[4/5] max-h-[700px] z-10">
+                <Image
+                  src="/hero-mentorship.png"
+                  alt="Professional Academic Mentorship"
+                  fill
+                  className="object-cover shadow-[0_20px_60px_rgba(26,58,107,0.15)] border border-primary/10 grayscale-noir"
+                  priority
+                />
+                
+                {/* Informative Floating Card */}
+                <div className="absolute -left-12 bottom-12 bg-white p-6 shadow-[0_15px_40px_rgba(26,58,107,0.12)] border border-primary/10 flex items-center gap-5 max-w-[280px]">
+                  <div className="bg-primary/5 p-3 rounded-none">
+                    <span className="material-symbols-outlined text-primary text-3xl">school</span>
+                  </div>
+                  <div>
+                    <h4 className="font-headline-md text-primary text-xl font-bold tracking-tight">100%</h4>
+                    <p className="font-label-md text-primary/70 text-xs tracking-wider uppercase mt-1">Acceptance Rate</p>
+                  </div>
+                </div>
+              </div>
+              <div className="absolute -right-20 top-1/4 writing-vertical opacity-[0.03] select-none pointer-events-none lg:block">
+                <span className="font-headline-xl text-[200px] text-primary tracking-tighter">PRECISION</span>
               </div>
             </div>
           </div>
@@ -121,16 +135,16 @@ export default function Home() {
       </>
 
       {/* ─── ADVANCED MODULES (final3 Dossier Overlap) ──────────── */}
-      <section className="bg-surface-dim pt-section-padding pb-section-padding px-margin-mobile md:px-margin-desktop relative border-y border-white/5">
+      <section className="bg-surface-dim pt-section-padding pb-section-padding px-margin-mobile md:px-margin-desktop relative border-y border-primary/5">
         <div className="max-w-container-max mx-auto relative z-20">
-          <div className="mb-24 reveal flex flex-col md:flex-row justify-between md:items-end hairline-white-left pl-6 border-white/20 border-l-2">
+          <div className="mb-24 reveal flex flex-col md:flex-row justify-between md:items-end hairline-gold pl-6 border-primary/20 border-l-2">
             <div>
-              <p className="font-label-md text-xs text-white/40 tracking-[0.5em] uppercase mb-4">
+              <p className="font-label-md text-xs text-primary/50 tracking-[0.5em] uppercase mb-4">
                 Core Framework
               </p>
-              <h2 className="font-headline-lg text-white uppercase">Mentorship Services.</h2>
+              <h2 className="font-headline-lg text-primary uppercase">Mentorship Services.</h2>
             </div>
-            <span className="font-label-md text-xs text-white/40 tracking-[0.2em] mt-6 md:mt-0">
+            <span className="font-label-md text-xs text-primary/50 tracking-[0.2em] mt-6 md:mt-0">
               IBDP // IGCSE // A LEVEL
             </span>
           </div>
@@ -139,7 +153,7 @@ export default function Home() {
             {/* Module 01 — Image left, card overlapping right */}
             <div className="relative flex flex-col md:flex-row items-center gap-12 reveal">
               <div className="w-full md:w-2/3 relative z-10">
-                <div className="aspect-video overflow-hidden border border-white/10">
+                <div className="aspect-video overflow-hidden border border-primary/10">
                   <Image
                     src="/module-staircase.png"
                     alt="Cognitive Engineering"
@@ -149,9 +163,9 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="w-full md:w-1/2 md:-ml-32 relative z-20 bg-background/90 backdrop-blur-md p-10 border border-white/10 shadow-2xl">
-                <span className="absolute -top-12 -left-8 watermark-num">01</span>
-                <h3 className="font-headline-md text-white mb-6 uppercase tracking-tight relative z-10">
+              <div className="w-full md:w-1/2 md:-ml-32 relative z-20 bg-background/90 backdrop-blur-md p-10 border border-primary/10 shadow-[0_10px_50px_rgba(26,58,107,0.12)]">
+                <span className="absolute -top-12 -left-8 watermark-num !text-primary/5">01</span>
+                <h3 className="font-headline-md text-primary mb-6 uppercase tracking-tight relative z-10">
                   Concept Mastery
                 </h3>
                 <p className="font-body-md text-on-surface-variant leading-relaxed relative z-10">
@@ -163,7 +177,7 @@ export default function Home() {
             {/* Module 02 — Image right, card overlapping left */}
             <div className="relative flex flex-col md:flex-row-reverse items-center gap-12 reveal">
               <div className="w-full md:w-2/3 relative z-10">
-                <div className="aspect-video overflow-hidden border border-white/10">
+                <div className="aspect-video overflow-hidden border border-primary/10">
                   <Image
                     src="/module-books.png"
                     alt="Strategic Mapping"
@@ -173,9 +187,9 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="w-full md:w-1/2 md:-mr-32 relative z-20 bg-background/90 backdrop-blur-md p-10 border border-white/10 shadow-2xl">
-                <span className="absolute -top-12 -right-8 watermark-num">02</span>
-                <h3 className="font-headline-md text-white mb-6 uppercase tracking-tight relative z-10">
+              <div className="w-full md:w-1/2 md:-mr-32 relative z-20 bg-background/90 backdrop-blur-md p-10 border border-primary/10 shadow-[0_10px_50px_rgba(26,58,107,0.12)]">
+                <span className="absolute -top-12 -right-8 watermark-num !text-primary/5">02</span>
+                <h3 className="font-headline-md text-primary mb-6 uppercase tracking-tight relative z-10">
                   IA & EE Guidance
                 </h3>
                 <p className="font-body-md text-on-surface-variant leading-relaxed relative z-10">
@@ -187,7 +201,7 @@ export default function Home() {
             {/* Module 03 — Image left, card overlapping right */}
             <div className="relative flex flex-col md:flex-row items-center gap-12 reveal">
               <div className="w-full md:w-2/3 relative z-10">
-                <div className="aspect-video overflow-hidden border border-white/10">
+                <div className="aspect-video overflow-hidden border border-primary/10">
                   <Image
                     src="/module-equations.png"
                     alt="Competitive Execution"
@@ -197,9 +211,9 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="w-full md:w-1/2 md:-ml-32 relative z-20 bg-background/90 backdrop-blur-md p-10 border border-white/10 shadow-2xl">
-                <span className="absolute -top-12 -left-8 watermark-num">03</span>
-                <h3 className="font-headline-md text-white mb-6 uppercase tracking-tight relative z-10">
+              <div className="w-full md:w-1/2 md:-ml-32 relative z-20 bg-background/90 backdrop-blur-md p-10 border border-primary/10 shadow-[0_10px_50px_rgba(26,58,107,0.12)]">
+                <span className="absolute -top-12 -left-8 watermark-num !text-primary/5">03</span>
+                <h3 className="font-headline-md text-primary mb-6 uppercase tracking-tight relative z-10">
                   Exam Strategy & Revision
                 </h3>
                 <p className="font-body-md text-on-surface-variant leading-relaxed relative z-10">
@@ -213,11 +227,11 @@ export default function Home() {
 
 
       {/* ─── OUTCOMES (Brutalist Data Grid from final3) ──────────── */}
-      <section className="bg-black py-section-padding border-y border-white/5">
+      <section className="bg-primary py-section-padding border-y border-primary/10 text-white">
         <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop reveal">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-white/10 border border-white/10">
             {/* Stat 1 */}
-            <div className="bg-black p-12 md:p-16 flex flex-col justify-center border-r border-white/5">
+            <div className="bg-primary p-12 md:p-16 flex flex-col justify-center border-r border-white/5">
               <p className="font-label-md text-xs text-white/40 uppercase tracking-[0.5em] mb-8">
                 Outcomes // Methodology
               </p>
@@ -231,7 +245,7 @@ export default function Home() {
             </div>
 
             {/* Stat 2 */}
-            <div className="bg-zinc-900/30 flex flex-col p-12 md:p-16 relative overflow-hidden">
+            <div className="bg-secondary flex flex-col p-12 md:p-16 relative overflow-hidden">
               <div className="absolute inset-0 dossier-overlay opacity-50" />
               <div className="relative z-10">
                 <p className="font-label-md text-xs text-white/40 uppercase tracking-[0.5em] mb-8">
@@ -249,32 +263,32 @@ export default function Home() {
           </div>
 
           {/* Case Study Sub-grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/10 border-x border-b border-white/10">
-            <div className="bg-surface-container-low p-10 group hover:bg-surface-variant transition-colors cursor-pointer border-r border-white/5">
-              <p className="font-label-md text-xs text-on-surface-variant mb-6 uppercase tracking-widest">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-primary/5 border-x border-b border-primary/10">
+            <div className="bg-surface p-10 group hover:bg-surface-variant transition-colors cursor-pointer border-r border-primary/5">
+              <p className="font-label-md text-xs text-primary/70 mb-6 uppercase tracking-widest">
                 Courses: IBDP Physics
               </p>
               <div className="flex justify-between items-center">
-                <span className="font-label-md text-xs text-white tracking-[0.2em]">EXPLORE</span>
-                <span className="material-symbols-outlined text-white group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
+                <span className="font-label-md text-xs text-primary tracking-[0.2em]">EXPLORE</span>
+                <span className="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
               </div>
             </div>
-            <div className="bg-surface-container-low p-10 group hover:bg-surface-variant transition-colors cursor-pointer border-r border-white/5">
-              <p className="font-label-md text-xs text-on-surface-variant mb-6 uppercase tracking-widest">
+            <div className="bg-surface p-10 group hover:bg-surface-variant transition-colors cursor-pointer border-r border-primary/5">
+              <p className="font-label-md text-xs text-primary/70 mb-6 uppercase tracking-widest">
                 Courses: IGCSE Physics
               </p>
               <div className="flex justify-between items-center">
-                <span className="font-label-md text-xs text-white tracking-[0.2em]">EXPLORE</span>
-                <span className="material-symbols-outlined text-white group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
+                <span className="font-label-md text-xs text-primary tracking-[0.2em]">EXPLORE</span>
+                <span className="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
               </div>
             </div>
-            <div className="bg-surface-container-low p-10 group hover:bg-surface-variant transition-colors cursor-pointer">
-              <p className="font-label-md text-xs text-on-surface-variant mb-6 uppercase tracking-widest">
+            <div className="bg-surface p-10 group hover:bg-surface-variant transition-colors cursor-pointer">
+              <p className="font-label-md text-xs text-primary/70 mb-6 uppercase tracking-widest">
                 Courses: AS & A Level Physics
               </p>
               <div className="flex justify-between items-center">
-                <span className="font-label-md text-xs text-white tracking-[0.2em]">EXPLORE</span>
-                <span className="material-symbols-outlined text-white group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
+                <span className="font-label-md text-xs text-primary tracking-[0.2em]">EXPLORE</span>
+                <span className="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
               </div>
             </div>
           </div>
@@ -282,17 +296,17 @@ export default function Home() {
       </section>
 
       {/* ─── FINAL CTA (finalm3) ────────────────────────────────── */}
-      <section className="py-48 px-margin-mobile text-center reveal">
+      <section className="py-48 px-margin-mobile text-center reveal bg-surface-dim">
         <div className="max-w-md mx-auto">
-          <h2 className="font-headline-lg text-white mb-8 uppercase tracking-tight">Ready to<br />pivot?</h2>
-          <p className="font-body-md text-white/40 mb-16 leading-relaxed">
+          <h2 className="font-headline-lg text-primary mb-8 uppercase tracking-tight">Ready to<br />pivot?</h2>
+          <p className="font-body-md text-on-surface-variant mb-16 leading-relaxed">
             We focus on small batch learning and personalized one-on-one mentoring to ensure you reach your full academic potential.
           </p>
           <Link
             href="https://wa.me/9137773967"
             target="_blank"
             rel="noopener noreferrer"
-            className="block bg-white text-black w-full py-6 font-label-md text-xs uppercase tracking-[0.5em] hover:bg-neutral-200 transition-colors"
+            className="block bg-primary text-white w-full py-6 font-label-md text-xs uppercase tracking-[0.5em] hover:bg-secondary transition-colors shadow-xl"
           >
             Apply for Consultation
           </Link>

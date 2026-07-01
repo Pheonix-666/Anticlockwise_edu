@@ -143,13 +143,13 @@ export default function Courses() {
   return (
     <div className="relative w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-padding">
       {/* Header section with radial background glow */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-white/5 blur-[120px] pointer-events-none"></div>
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-secondary/5 blur-[120px] pointer-events-none"></div>
 
-      <div className="mb-24 border-b border-white/10 pb-12 reveal active">
+      <div className="mb-24 border-b border-primary/10 pb-12 reveal active">
         <span className="font-label-md text-secondary tracking-[0.35em] uppercase block mb-4 text-sm">
           ACADEMIC SPECTRUM
         </span>
-        <h1 className="font-headline-xl text-white uppercase tracking-tight leading-none text-7xl md:text-8xl">
+        <h1 className="font-headline-xl text-primary uppercase tracking-tight leading-none text-7xl md:text-8xl">
           OUR PROGRAMS.
         </h1>
         <p className="font-body-lg text-on-surface-variant max-w-2xl mt-6 leading-relaxed">
@@ -171,7 +171,7 @@ export default function Courses() {
             >
               {/* Image side */}
               <div className="w-full md:w-2/3 relative z-10">
-                <div className="aspect-[16/10] overflow-hidden border border-white/10">
+                <div className="aspect-[16/10] overflow-hidden border border-primary/10">
                   <img
                     alt={course.title}
                     className="w-full h-full object-cover grayscale-noir hover:scale-105"
@@ -182,7 +182,7 @@ export default function Courses() {
 
               {/* Overlap content card */}
               <div
-                className={`w-full md:w-1/2 relative z-20 bg-background/90 backdrop-blur-md p-8 md:p-10 border border-white/10 shadow-2xl ${
+                className={`w-full md:w-1/2 relative z-20 bg-white backdrop-blur-md p-8 md:p-10 border border-primary/10 shadow-[0_8px_40px_rgba(26,58,107,0.10)] ${
                   isEven ? 'md:-ml-32' : 'md:-mr-32'
                 }`}
               >
@@ -199,7 +199,7 @@ export default function Courses() {
                   <span className="font-label-md text-secondary tracking-[0.25em] uppercase block mb-3 font-semibold text-sm">
                     {course.tag}
                   </span>
-                  <h2 className="font-headline-md text-white tracking-wide mb-6 uppercase">
+                  <h2 className="font-headline-md text-primary tracking-wide mb-6 uppercase">
                     {course.title}
                   </h2>
                   <p className="font-body-md text-on-surface-variant leading-relaxed mb-8">
@@ -224,9 +224,9 @@ export default function Courses() {
                   </div>
 
                   {/* Metadata and Methodology Grid */}
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 bg-surface-container-high/70 p-5 border border-white/10 mb-8">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 bg-surface-container-low p-5 border border-primary/10 mb-8">
                     <div>
-                      <span className="font-label-md text-white/40 uppercase tracking-widest block mb-1">
+                      <span className="font-label-md text-primary/50 uppercase tracking-widest block mb-1">
                         DURATION
                       </span>
                       <span className="font-body-md text-on-surface font-light text-[15px]">
@@ -234,7 +234,7 @@ export default function Courses() {
                       </span>
                     </div>
                     <div>
-                      <span className="font-label-md text-white/40 uppercase tracking-widest block mb-1">
+                      <span className="font-label-md text-primary/50 uppercase tracking-widest block mb-1">
                         SCHEDULE
                       </span>
                       <span className="font-body-md text-on-surface font-light text-[15px]">
@@ -254,8 +254,8 @@ export default function Courses() {
                   </div>
 
                   {/* Apply anchor */}
-                  <div className="mt-8 pt-6 border-t border-white/5 flex justify-between items-center">
-                    <span className="font-label-md text-white/40 tracking-wider uppercase text-xs">
+                  <div className="mt-8 pt-6 border-t border-primary/10 flex justify-between items-center">
+                    <span className="font-label-md text-primary/40 tracking-wider uppercase text-xs">
                       Cohort size: 30 students
                     </span>
                     <Link
@@ -275,13 +275,13 @@ export default function Courses() {
       </div>
 
       {/* Program callout with ambient glow and border */}
-      <div className="mt-36 relative bg-surface-container-high border border-white/10 p-8 md:p-12 flex flex-col md:flex-row justify-between items-center gap-8 overflow-hidden reveal active">
+      <div className="mt-36 relative bg-primary border border-primary/20 p-8 md:p-12 flex flex-col md:flex-row justify-between items-center gap-8 overflow-hidden reveal active">
         <div className="absolute inset-0 dossier-overlay opacity-30 pointer-events-none"></div>
         <div className="relative z-10">
           <h3 className="font-headline-md text-white mb-3 uppercase tracking-wide">
             Not sure which program fits your profile?
           </h3>
-          <p className="font-body-md text-on-surface-variant max-w-xl leading-relaxed">
+          <p className="font-body-md text-white/70 max-w-xl leading-relaxed">
             Schedule a diagnostic profile audit with our counseling registry to evaluate student conceptual depth, pacing capabilities, and target metrics.
           </p>
         </div>
@@ -290,7 +290,7 @@ export default function Courses() {
             href="https://wa.me/9137773967"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-white text-black px-8 py-4 font-label-md tracking-widest uppercase hover:bg-secondary hover:text-white transition-all duration-300 shadow-[0_5px_15px_rgba(255,255,255,0.05)]"
+            className="inline-block bg-white text-primary px-8 py-4 font-label-md tracking-widest uppercase hover:bg-neutral-champagne transition-all duration-300 shadow-[0_5px_15px_rgba(255,255,255,0.10)]"
           >
             BOOK PROFILE AUDIT
           </Link>

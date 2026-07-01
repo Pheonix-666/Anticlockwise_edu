@@ -9,7 +9,7 @@ export default function FloatingEnquire() {
     <div className="fixed bottom-8 right-8 z-50 flex flex-col items-end gap-3">
       {hovered && (
         <div
-          className="bg-[#1c1c13] border border-[#e9c349]/40 text-[#e6e3d3] px-5 py-3 text-sm font-metro tracking-widest uppercase animate-fadeUp"
+          className="bg-white border border-primary/20 text-primary px-5 py-3 text-sm font-metro tracking-widest uppercase animate-fadeUp shadow-[0_4px_20px_rgba(26,58,107,0.12)]"
           style={{ fontFamily: 'Metrophobic, sans-serif', fontSize: '12px', letterSpacing: '0.1em' }}
         >
           Questions? Let&apos;s talk.
@@ -22,7 +22,7 @@ export default function FloatingEnquire() {
         id="floating-enquire-btn"
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
-        className="enquire-float bg-[#e9c349] text-[#14140b] w-16 h-16 flex items-center justify-center hover:bg-white hover:scale-110 transition-all duration-300 shadow-[0_8px_30px_rgba(233,195,73,0.35)]"
+        className="enquire-float bg-primary text-white w-16 h-16 flex items-center justify-center hover:bg-secondary hover:scale-110 transition-all duration-300 shadow-[0_8px_30px_rgba(26,58,107,0.30)]"
         aria-label="Enquire Now"
       >
         <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
